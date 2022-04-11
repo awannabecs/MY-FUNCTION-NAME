@@ -1,0 +1,11 @@
+def finder(dict_trie,word):
+    if word:
+        first,rest = word[0],word[1:]
+        finder(dict_trie[first],rest)
+    else:
+        print([i for i in dict_trie.values()])
+
+        
+        
+        
+finder(dict_trie,"shoot")
